@@ -1,0 +1,98 @@
+html, body
+    height: 100%
+    margin: 0 auto
+#intro
+    height: 100%
+    width: 100%
+    background-color: black
+    display: flex
+    justify-content: center
+    align-items: center
+.title
+  color: white
+  font-size: 100px
+  font-weight: bolder
+@keyframes fission
+  0%
+  75%
+    font-size: 1000px
+    transform: rotatey(360deg)
+    transform: rotate(360deg)
+    color: red
+  75.1%
+    opacity: 0
+  100%
+    font-size: 100px
+    font-size: white
+@keyframes flip
+  100%
+    transform: rotatey(360deg)
+    color: red
+#F, #Sa, #Ib, #N, #R
+  animation-name: fission
+  animation-duration: 1s
+  animation-delay: 2s
+#Ia, #Sb, #O, #E
+  animation-name: fission
+  animation-duration: 2s
+  animation-direction: reverse
+  animation-delay: 1s
+#F
+  animation-name: flip
+  animation-duration: 7s
+  animation-delay: 3s
+  animation-iteration-count: infinite
+  color: red
+#menu
+  position: absolute
+  top: 0px
+  right: 0px
+  background-color: black
+  color: white
+  font-size: 20px
+  font-weight: bold
+  margin: 20px 50px 20px 0px
+  font-family: 'Josefin Sans', sans-serif
+.col-sm
+  background-color: black
+  margin: 20px
+  color: white
+  font-size: 100px
+  text-align: center
+  border-radius: 5%
+  min-width: 100px
+.section
+  text-align: center
+  font-size: 80px
+  font-family: 'Josefin Sans', sans-serif
+  font-weight: bold
+  margin: 100px
+  color: white
+  text-shadow: 5px 1px 1px black
+#tech
+.black-bg
+  background-color: black
+  border-radius: 5%
+#examples
+  background-color: black
+  padding-top: 40px
+.example
+  margin-bottom: 100px
+section
+  padding-bottom: 100px
+img
+  margin: 10px
+#soon
+  color: red
+#mcsd
+  margin: 20px
+  font-size: 20px
+  font-weight: bold
+#contact
+  background-color: black
+  padding-top: 40px
+.menu-option
+  color: white
+  &:hover
+    text-decoration: none
+    color: gray
