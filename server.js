@@ -43,7 +43,7 @@ const msg = {
   html: formContent,
 };
 sgMail.send(msg).then(() => {
-  res.status(200).send('Request Succeeded');
+  res.status(200);
   console.log('email sent');
   return;
 })
