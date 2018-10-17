@@ -1,0 +1,273 @@
+html, body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+#intro {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+@-webkit-keyframes fission {
+  0% {
+  }
+  75% {
+    font-size: 1000px;
+    -webkit-transform: rotatey(360deg);
+            transform: rotatey(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: red;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  100% {
+    font-size: 100px;
+    font-size: white;
+  }
+}
+
+@keyframes fission {
+  0% {
+  }
+  75% {
+    font-size: 1000px;
+    -webkit-transform: rotatey(360deg);
+            transform: rotatey(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    color: red;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  100% {
+    font-size: 100px;
+    font-size: white;
+  }
+}
+
+@-webkit-keyframes flip {
+  100% {
+    -webkit-transform: rotatey(360deg);
+            transform: rotatey(360deg);
+    color: red;
+  }
+}
+
+@keyframes flip {
+  100% {
+    -webkit-transform: rotatey(360deg);
+            transform: rotatey(360deg);
+    color: red;
+  }
+}
+
+#F, #Sa, #Ib, #N, #R {
+  -webkit-animation-name: fission;
+          animation-name: fission;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+#Ia, #Sb, #O, #E {
+  -webkit-animation-name: fission;
+          animation-name: fission;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  animation-direction: reverse;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+#F {
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  color: red;
+}
+
+#menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 50px 20px 0px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.col-sm {
+  background-color: black;
+  margin: 20px;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  border-radius: 5%;
+  min-width: 100px;
+}
+
+.section {
+  text-align: center;
+  font-size: 80px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin: 100px;
+}
+
+.white {
+  color: black;
+}
+
+.black {
+  color: white;
+}
+
+.white, .black {
+  font-weight: bolder;
+  text-shadow: 3px 1px 1px gray;
+}
+
+.black-bg {
+  background-color: black;
+  border-radius: 5%;
+}
+
+#examples {
+  background-color: black;
+  padding-top: 40px;
+}
+
+.example {
+  margin-bottom: 100px;
+}
+
+section {
+  padding-bottom: 100px;
+}
+
+img {
+  margin: 10px;
+}
+
+#soon, .crimson {
+  color: crimson;
+}
+
+#mcsd {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#about, #connect {
+  background-color: black;
+  padding-top: 40px;
+  color: #f2f2f2;
+}
+
+#connect, footer {
+  text-align: center;
+}
+
+p {
+  color: crimson;
+}
+
+.menu-option {
+  color: white;
+}
+
+.menu-option:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+.required {
+  color: crimson;
+}
+
+#sent {
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  padding: 30px;
+}
+
+.col-md {
+  background-color: white;
+  margin: 20px;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 5%;
+  min-width: 20px;
+}
+
+footer {
+  background-color: black;
+}
+
+#copy {
+  padding: 30px 0px 20px 0px;
+}
+
+.col-md-6, .col-md-12 {
+  padding: 10px;
+}
+
+.connect {
+  color: black;
+}
+
+.connect:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    font-size: 50px;
+    margin: 50px 0px 50px 0px;
+  }
+  .title {
+    font-size: 65px;
+  }
+  #menu {
+    right: 20px;
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  img {
+    margin: 10px 0px 10px 0px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
