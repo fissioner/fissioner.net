@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 
 app.engine('.handlebars', exphbs({ defaultLayout: 'main', extname: '.handlebars' }));
-app.set('views', path.join(__dirname, 'views'));
+app.set('/', path.join(__dirname, 'views'));
 app.set('view engine', '.handlebars');
 
 app.use('/', express.static(path.join(__dirname, 'public')));
