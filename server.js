@@ -1,5 +1,3 @@
-// using SendGrid's v3 Node.js Library
-// https://github.com/sendgrid/sendgrid-nodejs
 require('dotenv').config()
 const express = require('express');
 const app = express();
