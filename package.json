@@ -2,8 +2,8 @@
   "name": "fissioner.net",
   "version": "1.0.0",
   "description": "Personal Portfolio",
+  "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Derek Thornton",
@@ -17,9 +17,5 @@
     "dotenv": "^6.1.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0"
-  },
-  "resolutions": {
-    "node": "8.9.4",
-    "npm": "5.6.0"
   }
 }
