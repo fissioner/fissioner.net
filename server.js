@@ -55,5 +55,5 @@ console.log(req.body)
 res.render('index', {sent: true, msg: 'Your message has been sent.'})
 })
 
-const port = process.env.PORT_NUM || 3000;
+const port = process.env.PORT || process.env.PORT_NUM || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
