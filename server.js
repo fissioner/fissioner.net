@@ -5,17 +5,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 
-app.engine('.handlebars', exphbs({ defaultLayout: 'main', extname: '.handlebars' }));
-app.set('/', path.join(__dirname, 'views'));
-app.set('view engine', '.handlebars');
-
-app.use('/', express.static(path.join(__dirname, 'public')));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-app.get('/', (req, res) => {
-  res.render('index');
-});
 
 
 app.post('/sent', (req, res) => {
